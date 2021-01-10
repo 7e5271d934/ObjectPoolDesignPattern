@@ -33,7 +33,7 @@ public class ObjectPool {
         }
     }
 
-    public Object getCar(String brand) {
+    public Car getCar(String brand) {
         Car car = null;
         for (Reusable reusableObj: reusableObjects) {
            if (reusableObj.toString().equals(brand.toLowerCase())) {
