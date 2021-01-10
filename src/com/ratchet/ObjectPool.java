@@ -11,11 +11,11 @@ public class ObjectPool {
 
     private static ObjectPool objectPoolInstance;
 
-    private Object[] reusableObjects;
+    private Reusable[] reusableObjects;
     private static final int MAX_OBJECTS = 100;
 
     private ObjectPool() {
-        reusableObjects = new Object[MAX_OBJECTS];
+        reusableObjects = new Reusable[MAX_OBJECTS];
         objectPoolInstance = this;
     }
 
@@ -35,9 +35,9 @@ public class ObjectPool {
 
     public Object getCar(String brand) {
         Car car = null;
-        for (Object obj: reusableObjects) {
-           if (obj.toString().equals(brand.toLowerCase())) {
-               car = (Car) obj;
+        for (Reusable reusableObj: reusableObjects) {
+           if (reusableObj.toString().equals(brand.toLowerCase())) {
+               car = (Car) reusableObj;
            }
         }
         return car;
