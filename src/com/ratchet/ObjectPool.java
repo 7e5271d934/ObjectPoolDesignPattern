@@ -30,7 +30,7 @@ public class ObjectPool {
 
     public void init() {
         for (int i = 0; i < reusableObjects.length; i++) {
-            reusableObjects[i] = new Car("Toyota " + i);
+            reusableObjects[i] = new Car("Brand | " + i);
         }
     }
 
