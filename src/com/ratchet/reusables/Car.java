@@ -11,4 +11,11 @@ public class Car extends Reusable {
     public String getBrand() {
         return brand;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                '}';
+    }
 }
