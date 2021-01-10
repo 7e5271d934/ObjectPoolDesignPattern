@@ -16,4 +16,8 @@ public class ObjectPool {
         return objectPoolInstance;
     }
 
+    public void init() {
+
+    }
+
 }
