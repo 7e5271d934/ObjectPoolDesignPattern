@@ -14,8 +14,6 @@ public class Car extends Reusable {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "brand='" + brand + '\'' +
-                '}';
+        return brand;
     }
 }
