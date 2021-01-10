@@ -1,6 +1,6 @@
 package com.ratchet.reusables;
 
-public class Car {
+public class Car extends Reusable {
 
     private String brand;
 
