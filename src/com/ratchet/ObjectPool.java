@@ -17,6 +17,7 @@ public class ObjectPool {
     private ObjectPool() {
         reusableObjects = new Reusable[MAX_OBJECTS];
         objectPoolInstance = this;
+        init();
     }
 
     public static ObjectPool getInstance() {
