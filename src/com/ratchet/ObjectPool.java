@@ -3,10 +3,6 @@ package com.ratchet;
 import com.ratchet.reusables.Car;
 import com.ratchet.reusables.Reusable;
 
-import java.util.HashSet;
-import java.util.Locale;
-import java.util.Random;
-
 public class ObjectPool {
 
     private static ObjectPool objectPoolInstance;
