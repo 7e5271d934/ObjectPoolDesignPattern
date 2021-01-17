@@ -45,7 +45,7 @@ public class ObjectPool {
         if (reusableClass == Reusables.CAR) {
             Car car = getCar(objName);
             for (int i = 0; i < reusableObjects.length; i++) {
-                if (car.toString() == reusableObjects[i].toString()) {
+                if (car.toString().equals(reusableObjects[i].toString())) {
                     reusableObjects[i] = null;
                 }
             }
