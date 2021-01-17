@@ -2,6 +2,7 @@ package com.ratchet;
 
 import com.ratchet.reusables.Car;
 import com.ratchet.reusables.Reusable;
+import com.ratchet.reusables.Reusables;
 
 public class ObjectPool {
 
@@ -40,7 +41,15 @@ public class ObjectPool {
         return car;
     }
 
-    public void dispose(String objName, String objClass) {
+    public void dispose(String objName, Reusables reusableClass) {
+        if (reusableClass == Reusables.CAR) {
+            Car car = getCar(objName);
+            for (int i = 0; i < reusableObjects.length; i++) {
+                if (car.toString() == reusableObjects[i].toString()) {
+                    reusableObjects[i] = null;
+                }
+            }
+        }
 
     }
 
