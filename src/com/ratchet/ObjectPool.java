@@ -44,4 +44,8 @@ public class ObjectPool {
         return car;
     }
 
+    public void dispose(String objName, String objClass) {
+
+    }
+
 }
