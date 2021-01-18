@@ -11,7 +11,7 @@ public class Main {
         // ObjectPool.getInstance().dispose("brand 25");
         // System.out.println(ObjectPool.getInstance().getCar("brand 25"));
 
-        Car car = (Car) ObjectPool.getInstance().getObj("brand 25", Reusables.CAR);
+        Car car = (Car) ObjectPool.getInstance().getObj("brand 55");
         System.out.println(car.getBrand());
 
         Reusable[] reusableObjects = ObjectPool.getInstance().getReusableObjects();
