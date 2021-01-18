@@ -65,4 +65,7 @@ public class ObjectPool {
         return null;
     }
 
+    public Reusable[] getReusableObjects() {
+        return reusableObjects;
+    }
 }
