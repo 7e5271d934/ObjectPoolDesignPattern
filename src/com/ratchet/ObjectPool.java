@@ -41,16 +41,12 @@ public class ObjectPool {
         return car;
     }
 
-    public void dispose(String objName, Reusables reusableClass) {
-        if (reusableClass == Reusables.CAR) {
-            Car car = getCar(objName);
+    public void dispose(String objName) {
             for (int i = 0; i < reusableObjects.length; i++) {
-                if (car.toString().equals(reusableObjects[i].toString())) {
+                if (objName.equals(reusableObjects[i].toString())) {
                     reusableObjects[i] = null;
                 }
             }
-        }
-
     }
 
     public Object getObj(String objName, Reusables reusableClass) {
